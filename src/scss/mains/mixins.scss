@@ -14,3 +14,10 @@
   @return $result
 }
 //font-size:rem(42)
+
+
+@function adapt($min,$max,$container){
+  $result: calc($min+($max-$min)((100vw-320px)($container-320)));
+  @return $result
+}
+//calc(20px+(50-20)((100vw 320px)(1200-320)));
