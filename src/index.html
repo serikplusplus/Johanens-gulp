@@ -1,8 +1,808 @@
 <!DOCTYPE html>
 <html lang="en">
-	@@include('html\head.html',{ "title":"Main Page", "description":"", "keywords":"", "nameSite":"",
-	})
+	@@include('html\head.html',{ "title":"Main Page", "description":"",
+	"keywords":"", "nameSite":"", })
 	<body>
-		@@include('html/footer.html')
+		<div class="wrapper">
+			@@include('html/header.html')
+			<section class="main-section">
+				<div class="main-section__content">
+					<div class="main-section__wrapper container">
+						<div class="main-section__left">
+							<h2 class="main-section__title">
+								The translation agency with the most satisfied customers
+							</h2>
+							<p
+								class="main-section__description main-section__description_short"
+							>
+								We have an average rating of 9.3 out of 10 based on over 600
+								ratings. We will gladly help you reach more people by making
+								your message legible to them.
+							</p>
+							<div class="main-section__contact">
+								<button class="main-section__btn btn btn_white">
+									GET QUOATION
+								</button>
+								<span>Or</span>
+								<p>
+									Call us:
+									<a
+										class="main-section__call"
+										href="tel:+01234567890"
+										>+0 (123) 456 78 90</a
+									>
+								</p>
+							</div>
+						</div>
+						<div class="main-section__right">
+							<div class="swiper main-section__slider">
+								<div class="swiper-wrapper">
+									<div class="main-section__slide swiper-slide">
+										<img
+											src="@img/main-section-1.jpg"
+											alt=""
+										/>
+									</div>
+									<div class="main-section__slide swiper-slide">
+										<img
+											src="@img/main-section-2.jpg"
+											alt=""
+										/>
+									</div>
+									<div class="main-section__slide swiper-slide">
+										<img
+											src="@img/main-section-3.jpg"
+											alt=""
+										/>
+									</div>
+									<div class="main-section__slide swiper-slide">
+										<img
+											src="@img/main-section-4.jpg"
+											alt=""
+										/>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<main>
+				<section class="statistic main__statistic">
+					<div class="container container_small">
+						<div class="statistic__wrapper">
+							<ul class="statistic__list">
+								<li class="statistic__elem">
+									<p class="statistic__stat">132</p>
+									<p class="statistic__stat-title">clients</p>
+								</li>
+								<li class="statistic__elem">
+									<p class="statistic__stat">30+</p>
+									<p class="statistic__stat-title">partners</p>
+								</li>
+								<li class="statistic__elem">
+									<p class="statistic__stat">50+</p>
+									<p class="statistic__stat-title">projects</p>
+								</li>
+								<li class="statistic__elem">
+									<p class="statistic__stat">6</p>
+									<p class="statistic__stat-title">years serving</p>
+								</li>
+								<li class="statistic__elem">
+									<p class="statistic__stat">16</p>
+									<p class="statistic__stat-title">Awards</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				@@include('html/our-clients.html')
+				<section class="translation-agency main__translation-agency">
+					<div class="translation-agency__wrapper">
+						<div
+							class="translation-agency__img translation-agency__img_left-position"
+						>
+							<img
+								src="@img/translation-agency.png"
+								alt="translation agency"
+							/>
+						</div>
+						<div class="container translation-agency__content">
+							<div class="translation-agency__inner">
+								<div class="translation-agency__left"></div>
+								<div class="translation-agency__right">
+									<h2
+										class="title title_red title_red_medium translation-agency__title"
+									>
+										Übersetzungsagentur
+									</h2>
+									<p class="translation-agency__descr">
+										Ein kleiner Einblick Schneiders-Sprach-Service,das ist eine
+										inhabergeführte Übersetzungsagenturin Berlin. Als
+										Lateinamerikawissenschaftlerinund Sprachmittlerin für
+										Spanisch und Portugiesisch habe ich mich entschlossen, vor
+										über 20 Jahren den Schritt in die Selbstständigkeit.
+									</p>
+									<button class="btn btn_tomato translation-agency__btn">
+										Learn More About Us
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="reviews main__reviews">
+					<div class="block-bg">
+						<div class="block-bg__elem">
+							<img
+								src="@img/line-bg.png"
+								alt=""
+							/>
+						</div>
+					</div>
+					<div class="swiper reviews__slider">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="reviews__slide">
+									<p class="reviews__img">
+										<img
+											src="@img/reviewer.jpg"
+											alt="Feedback Writer"
+										/>
+									</p>
+
+									<p class="reviews__awesom">Awesome Client</p>
+									<p class="reviews__text">
+										This company is the best i’ve ever cooperate with! This
+										company is the best i’ve ever cooperate with! This company
+										is the best i’ve ever cooperate with! This company is the
+										best i’ve ever cooperate with!
+									</p>
+									<p class="reviews__name">Richard</p>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="reviews__slide">
+									<p class="reviews__img">
+										<img
+											src="@img/reviewer.jpg"
+											alt="Feedback Writer"
+										/>
+									</p>
+
+									<p class="reviews__awesom">Awesome Client</p>
+									<p class="reviews__text">
+										This company is the best i’ve ever cooperate with! This
+										company is the best i’ve ever cooperate with! This company
+										is the best i’ve ever cooperate with! This company is the
+										best i’ve ever cooperate with!
+									</p>
+									<p class="reviews__name">Richard</p>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="reviews__slide">
+									<p class="reviews__img">
+										<img
+											src="@img/reviewer.jpg"
+											alt="Feedback Writer"
+										/>
+									</p>
+
+									<p class="reviews__awesom">Awesome Client</p>
+									<p class="reviews__text">
+										This company is the best i’ve ever cooperate with! This
+										company is the best i’ve ever cooperate with! This company
+										is the best i’ve ever cooperate with! This company is the
+										best i’ve ever cooperate with!
+									</p>
+									<p class="reviews__name">Richard</p>
+								</div>
+							</div>
+						</div>
+						<div class="reviews-pagination"></div>
+					</div>
+				</section>
+
+				<section class="benefits main__benefits">
+					<div class="benefits__wrapper">
+						<div class="container">
+							<h2 class="benefits__title">
+								Professional Translation Agency with quality guarantee
+							</h2>
+							<ul class="benefits__list">
+								<li class="benefits__item">
+									<svg
+										width="34"
+										height="26"
+										viewBox="0 0 34 26"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M2.00098 12.9047L11.9613 22.865L31.8819 2.94434"
+											stroke="#101F42"
+											stroke-width="3.98413"
+											stroke-linecap="round"
+										/>
+									</svg>
+									Over than 10 years working
+								</li>
+								<li class="benefits__item">
+									<svg
+										width="34"
+										height="26"
+										viewBox="0 0 34 26"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M2.00098 12.9047L11.9613 22.865L31.8819 2.94434"
+											stroke="#101F42"
+											stroke-width="3.98413"
+											stroke-linecap="round"
+										/>
+									</svg>
+									Professionaly professionals
+								</li>
+								<li class="benefits__item">
+									<svg
+										width="34"
+										height="26"
+										viewBox="0 0 34 26"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M2.00098 12.9047L11.9613 22.865L31.8819 2.94434"
+											stroke="#101F42"
+											stroke-width="3.98413"
+											stroke-linecap="round"
+										/>
+									</svg>
+									Getting better every day
+								</li>
+								<li class="benefits__item">
+									<svg
+										width="34"
+										height="26"
+										viewBox="0 0 34 26"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M2.00098 12.9047L11.9613 22.865L31.8819 2.94434"
+											stroke="#101F42"
+											stroke-width="3.98413"
+											stroke-linecap="round"
+										/>
+									</svg>
+									Step by step growing
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+
+				<section class="how-work main__how-work">
+					<div class="container">
+						<div class="how-work__top">
+							<div class="how-work__img ibg">
+								<img
+									src="@img/howwork.jpg"
+									alt=""
+								/>
+							</div>
+
+							<div class="swiper how-work__slider">
+								<div class="how-work__btns">
+									<button class="btn btn_blue_outline active">Step 1</button>
+									<button class="btn btn_blue_outline">Step 2</button>
+									<button class="btn btn_blue_outline">Step 3</button>
+								</div>
+								<div class="swiper-wrapper how-work__slider-wrapper">
+									<div class="swiper-slide how-work__slide">
+										<h3 class="title title_medium how-work__title">
+											How do we work
+										</h3>
+										<p class="how-work__descr">
+											With personal profile you can make a good impression to
+											the people, who searching for a good specialist. Also you
+											can gain a lot of good things every month!
+										</p>
+									</div>
+									<div class="swiper-slide how-work__slide">
+										<h3 class="title title_medium how-work__title">
+											How do we work
+										</h3>
+										<p class="how-work__descr">
+											With personal profile you can make a good impression to
+											the people, who searching for a good specialist. Also you
+											can gain a lot of good things every month!
+										</p>
+									</div>
+									<div class="swiper-slide how-work__slide">
+										<h3 class="title title_medium how-work__title">
+											How do we work
+										</h3>
+										<p class="how-work__descr">
+											With personal profile you can make a good impression to
+											the people, who searching for a good specialist. Also you
+											can gain a lot of good things every month!
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="how-work__bottom">
+							<ul class="how-work__list">
+								<li class="how-work__item">Over than 10 years working</li>
+								<li class="how-work__item">Professionaly professionals</li>
+								<li class="how-work__item">Getting better every day</li>
+								<li class="how-work__item">Step by step growing</li>
+							</ul>
+							<button class="btn btn_blue how-work__btn">
+								Learn more
+								<svg
+									width="124"
+									height="16"
+									viewBox="0 0 124 16"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M123.707 8.70711C124.098 8.31658 124.098 7.68342 123.707 7.29289L117.343 0.928932C116.953 0.538408 116.319 0.538408 115.929 0.928932C115.538 1.31946 115.538 1.95262 115.929 2.34315L121.586 8L115.929 13.6569C115.538 14.0474 115.538 14.6805 115.929 15.0711C116.319 15.4616 116.953 15.4616 117.343 15.0711L123.707 8.70711ZM0 9H123V7H0V9Z"
+										fill="#F24C4C"
+									/>
+								</svg>
+							</button>
+						</div>
+					</div>
+				</section>
+
+				<section class="main__speciality">
+					<div class="speciality speciality_blue">
+						<div class="container">
+							<div class="speciality__wrapper">
+								<div class="speciality__left">
+									<h3 class="speciality__title title title_medium">
+										Areas of Speciality
+									</h3>
+									<ul class="speciality__list">
+										<li class="speciality__item speciality__item_yellow">
+											<svg
+												width="30"
+												height="30"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<g>
+													<rect
+														fill="none"
+														id="canvas_background"
+														y="-1"
+														x="-1"
+													/>
+												</g>
+												<g>
+													<circle
+														stroke="#101f42"
+														stroke-width="2"
+														id="circle_1"
+														fill="none"
+														r="14"
+														cy="15.0005"
+														cx="15"
+													/>
+													<circle
+														id="circle_2"
+														stroke-width="7"
+														fill="#101F42"
+														r="8"
+														cy="15.0004"
+														cx="15.0004"
+													/>
+												</g></svg
+											>travel and tourism
+										</li>
+										<li class="speciality__item speciality__item_yellow">
+											<svg
+												width="30"
+												height="30"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<g>
+													<rect
+														fill="none"
+														id="canvas_background"
+														y="-1"
+														x="-1"
+													/>
+												</g>
+												<g>
+													<circle
+														stroke="#101f42"
+														stroke-width="2"
+														id="circle_1"
+														fill="none"
+														r="14"
+														cy="15.0005"
+														cx="15"
+													/>
+													<circle
+														id="circle_2"
+														stroke-width="7"
+														fill="#101F42"
+														r="8"
+														cy="15.0004"
+														cx="15.0004"
+													/>
+												</g></svg
+											>Legal
+										</li>
+										<li class="speciality__item speciality__item_yellow">
+											<svg
+												width="30"
+												height="30"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<g>
+													<rect
+														fill="none"
+														id="canvas_background"
+														y="-1"
+														x="-1"
+													/>
+												</g>
+												<g>
+													<circle
+														stroke="#101f42"
+														stroke-width="2"
+														id="circle_1"
+														fill="none"
+														r="14"
+														cy="15.0005"
+														cx="15"
+													/>
+													<circle
+														id="circle_2"
+														stroke-width="7"
+														fill="#101F42"
+														r="8"
+														cy="15.0004"
+														cx="15.0004"
+													/>
+												</g></svg
+											>environment
+										</li>
+										<li class="speciality__item speciality__item_yellow">
+											<svg
+												width="30"
+												height="30"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<g>
+													<rect
+														fill="none"
+														id="canvas_background"
+														y="-1"
+														x="-1"
+													/>
+												</g>
+												<g>
+													<circle
+														stroke="#101f42"
+														stroke-width="2"
+														id="circle_1"
+														fill="none"
+														r="14"
+														cy="15.0005"
+														cx="15"
+													/>
+													<circle
+														id="circle_2"
+														stroke-width="7"
+														fill="#101F42"
+														r="8"
+														cy="15.0004"
+														cx="15.0004"
+													/>
+												</g></svg
+											>chemistry
+										</li>
+										<li class="speciality__item speciality__item_yellow">
+											<svg
+												width="30"
+												height="30"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<g>
+													<rect
+														fill="none"
+														id="canvas_background"
+														y="-1"
+														x="-1"
+													/>
+												</g>
+												<g>
+													<circle
+														stroke="#101f42"
+														stroke-width="2"
+														id="circle_1"
+														fill="none"
+														r="14"
+														cy="15.0005"
+														cx="15"
+													/>
+													<circle
+														id="circle_2"
+														stroke-width="7"
+														fill="#101F42"
+														r="8"
+														cy="15.0004"
+														cx="15.0004"
+													/>
+												</g></svg
+											>architecture
+										</li>
+										<li class="speciality__item speciality__item_yellow">
+											<svg
+												width="30"
+												height="30"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<g>
+													<rect
+														fill="none"
+														id="canvas_background"
+														y="-1"
+														x="-1"
+													/>
+												</g>
+												<g>
+													<circle
+														stroke="#101f42"
+														stroke-width="2"
+														id="circle_1"
+														fill="none"
+														r="14"
+														cy="15.0005"
+														cx="15"
+													/>
+													<circle
+														id="circle_2"
+														stroke-width="7"
+														fill="#101F42"
+														r="8"
+														cy="15.0004"
+														cx="15.0004"
+													/>
+												</g></svg
+											>culture
+										</li>
+										<li class="speciality__item speciality__item_yellow">
+											<svg
+												width="30"
+												height="30"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<g>
+													<rect
+														fill="none"
+														id="canvas_background"
+														y="-1"
+														x="-1"
+													/>
+												</g>
+												<g>
+													<circle
+														stroke="#101f42"
+														stroke-width="2"
+														id="circle_1"
+														fill="none"
+														r="14"
+														cy="15.0005"
+														cx="15"
+													/>
+													<circle
+														id="circle_2"
+														stroke-width="7"
+														fill="#101F42"
+														r="8"
+														cy="15.0004"
+														cx="15.0004"
+													/>
+												</g></svg
+											>fmcg
+										</li>
+										<li class="speciality__item speciality__item_yellow">
+											<svg
+												width="30"
+												height="30"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<g>
+													<rect
+														fill="none"
+														id="canvas_background"
+														y="-1"
+														x="-1"
+													/>
+												</g>
+												<g>
+													<circle
+														stroke="#101f42"
+														stroke-width="2"
+														id="circle_1"
+														fill="none"
+														r="14"
+														cy="15.0005"
+														cx="15"
+													/>
+													<circle
+														id="circle_2"
+														stroke-width="7"
+														fill="#101F42"
+														r="8"
+														cy="15.0004"
+														cx="15.0004"
+													/>
+												</g></svg
+											>bank and finance
+										</li>
+										<li class="speciality__item speciality__item_yellow">
+											<svg
+												width="30"
+												height="30"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<g>
+													<rect
+														fill="none"
+														id="canvas_background"
+														y="-1"
+														x="-1"
+													/>
+												</g>
+												<g>
+													<circle
+														stroke="#101f42"
+														stroke-width="2"
+														id="circle_1"
+														fill="none"
+														r="14"
+														cy="15.0005"
+														cx="15"
+													/>
+													<circle
+														id="circle_2"
+														stroke-width="7"
+														fill="#101F42"
+														r="8"
+														cy="15.0004"
+														cx="15.0004"
+													/>
+												</g></svg
+											>Technical
+										</li>
+										<li class="speciality__item speciality__item_yellow">
+											<svg
+												width="30"
+												height="30"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<g>
+													<rect
+														fill="none"
+														id="canvas_background"
+														y="-1"
+														x="-1"
+													/>
+												</g>
+												<g>
+													<circle
+														stroke="#101f42"
+														stroke-width="2"
+														id="circle_1"
+														fill="none"
+														r="14"
+														cy="15.0005"
+														cx="15"
+													/>
+													<circle
+														id="circle_2"
+														stroke-width="7"
+														fill="#101F42"
+														r="8"
+														cy="15.0004"
+														cx="15.0004"
+													/>
+												</g></svg
+											>Healthcare
+										</li>
+									</ul>
+								</div>
+								<div class="speciality__right">
+									<img
+										src="@img/speciality.jpg"
+										alt="Speciality"
+										class="speciality__img"
+									/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="discover-blog main__discover-blog">
+					<div class="container">
+						<h2 class="title title_red discover-blog__title">
+							Discover our Blog!
+						</h2>
+						<ul class="discover-blog__list">
+							<li class="discover-blog__elem">
+								<a
+									class="discover-blog__link"
+									href=""
+								>
+									<div class="discover-blog__img ibg">
+										<img
+											src="@img/discover-blog-1.jpg"
+											alt=""
+										/>
+									</div>
+									<h3 class="title discover-blog__elem-title">Story Name</h3>
+									<p class="discover-blog__descr">
+										The event description The event description The event
+										description
+									</p>
+								</a>
+							</li>
+							<li class="discover-blog__elem">
+								<a
+									class="discover-blog__link"
+									href=""
+								>
+									<div class="discover-blog__img ibg">
+										<img
+											src="@img/discover-blog-1.jpg"
+											alt=""
+										/>
+									</div>
+									<h3 class="title discover-blog__elem-title">Story Name</h3>
+									<p class="discover-blog__descr">
+										The event description The event description The event
+										description
+									</p>
+								</a>
+							</li>
+							<li class="discover-blog__elem">
+								<a
+									class="discover-blog__link"
+									href=""
+								>
+									<div class="discover-blog__img ibg">
+										<img
+											src="@img/discover-blog-1.jpg"
+											alt=""
+										/>
+									</div>
+									<h3 class="title discover-blog__elem-title">Story Name</h3>
+									<p class="discover-blog__descr">
+										The event description The event description The event
+										description
+									</p>
+								</a>
+							</li>
+						</ul>
+						<button class="btn btn_tomato discover-blog__btn">
+							Show me more!
+						</button>
+					</div>
+				</section>
+			</main>
+			@@include('html/footer.html')
+		</div>
 	</body>
 </html>

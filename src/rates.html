@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+	@@include('html\head.html',{ "title":"Contact Page", "description":"",
+	"keywords":"", "nameSite":"", })
+	<body>
+		<div class="wrapper">
+			@@include('html/header.html')
+			<section class="main-section main-section_double main-section_blue">
+				<div class="main-section__image ibg">
+					<img
+						src="@img/rates-main-section.jpg"
+						alt=""
+					/>
+				</div>
+
+				<div class="main-section__content">
+					<div class="main-section__right">
+						<h2 class="main-section__title">
+							Calculate the price for your translation
+						</h2>
+						<p class="main-section__description">
+							Our clients’ average review score is 9.3, based on more than 600
+							reviews. Our customer satisfaction serves as proof that we offer
+							excellent translations at competitive rates.
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<main id="app">
+				<section class="calculation-rates calculation">
+					<div class="container calculation__wrapper">
+						<h2 class="calculation__title title title_large">
+							Calculation module
+						</h2>
+						<form
+							action=""
+							class="calculation__form"
+						>
+							<div class="calculation__form-grup calculation__form-grup_calc">
+								<h3 class="calculation__form-title title title_red">
+									Calculation module
+								</h3>
+
+								<div class="calculation__form-pair">
+									<p class="calculation__form-subtitle">Language Pair</p>
+
+									<div class="calculation__form-dropdawn dropdawn">
+										<div class="calculation__dropdawn-btn dropdawn__select-btn">
+											<span>Sourse language</span>
+											<i class="dropdawn__arrow"></i>
+										</div>
+										<div class="dropdawn__content">
+											<div class="dropdawn__search">
+												<i class="uil uil-search"></i>
+												<input
+													spellcheck="false"
+													type="text"
+													placeholder="Search"
+												/>
+											</div>
+											<ul class="dropdawn__options"></ul>
+										</div>
+									</div>
+
+									<div class="calculation__form-dropdawn dropdawn">
+										<div class="calculation__dropdawn-btn dropdawn__select-btn">
+											<span>Target language</span>
+											<i class="dropdawn__arrow"></i>
+										</div>
+										<div class="dropdawn__content">
+											<div class="dropdawn__search">
+												<i class="uil uil-search"></i>
+												<input
+													spellcheck="false"
+													type="text"
+													placeholder="Search"
+												/>
+											</div>
+											<ul class="dropdawn__options"></ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="calculation__form-pair">
+									<p class="calculation__form-subtitle">Area of expertise</p>
+									<div
+										class="calculation__form-dropdawn calculation__form-dropdawn_large dropdawn"
+									>
+										<div
+											class="dropdawn__select-btn dropdawn--multiple__select-btn"
+										>
+											<span>
+												<svg
+													width="16"
+													height="16"
+													viewBox="0 0 16 16"
+													fill="none"
+													xmlns="http://www.w3.org/2000/svg"
+												>
+													<path
+														d="M5 5L8 8L5 11"
+														stroke="white"
+														stroke-linecap="round"
+													/>
+													<path
+														d="M11.375 11L8.375 8L11.375 5"
+														stroke="white"
+														stroke-linecap="round"
+													/>
+													<circle
+														cx="8"
+														cy="8"
+														r="7.5"
+														stroke="white"
+													/>
+												</svg>
+												General
+											</span>
+										</div>
+										<div class="dropdawn__content">
+											<div class="dropdawn__search">
+												<i class="uil uil-search"></i>
+												<input
+													spellcheck="false"
+													type="text"
+													placeholder="Search"
+												/>
+											</div>
+											<ul class="dropdawn__options"></ul>
+										</div>
+									</div>
+								</div>
+
+								<div class="calculation__form-pair">
+									<p class="calculation__form-subtitle">Amount of words</p>
+									<input
+										type="number"
+										name="amountWords"
+										id="amountWords"
+										class="calculation__form-input"
+									/>
+								</div>
+
+								<div class="calculation__form-pair">
+									<p class="calculation__form-subtitle">Quality Check</p>
+
+									<div class="calculation__radio-wrapper">
+										<label class="calculation__form-label">
+											Full check
+											<input
+												type="radio"
+												name="qualitycheck"
+												value=""
+												id="fullcheck"
+												class="calculation__form-radio"
+											/>
+											<span class="calculation__radio-box"></span>
+										</label>
+
+										<label class="calculation__form-label">
+											Sample check
+											<input
+												type="radio"
+												name="qualitycheck"
+												value=""
+												id="fullcheck"
+												class="calculation__form-radio"
+											/>
+											<span class="calculation__radio-box"></span>
+										</label>
+									</div>
+								</div>
+							</div>
+
+							<div
+								class="calculation__form-grup calculation__form-grup_estimation"
+							>
+								<h3 class="calculation__form-title title title_red">
+									Estimation
+								</h3>
+								<div class="calculation__form-pair">
+									<p class="calculation__form-subtitle">
+										Estimated time of delivery
+									</p>
+									<p class="calculation__form-meaning">In consultation</p>
+								</div>
+								<div class="calculation__form-pair">
+									<p class="calculation__form-subtitle">Rate per word</p>
+									<p class="calculation__form-meaning">€ 0,12</p>
+								</div>
+								<div class="calculation__form-pair">
+									<p class="calculation__form-subtitle">Total amount</p>
+									<p class="calculation__form-meaning">€ 14785,56</p>
+								</div>
+								<p class="calculation__form-sign">
+									All prices are exclusive of VAT. The price quoted is only an
+									estimate.
+								</p>
+								<button
+									type="submit"
+									class="calculation__form-submite btn btn_tomato"
+								>
+									Request a quote
+								</button>
+							</div>
+						</form>
+					</div>
+				</section>
+
+				<section class="benefits rates__benefits">
+					<div class="benefits__wrapper benefits__wrapper_blue">
+						<div class="container">
+							<h2 class="benefits__title">
+								Professional Translation Agency with quality guarantee
+							</h2>
+							<ul class="benefits__list">
+								<li class="benefits__item benefits__item_red-marker">
+									<svg
+										width="34"
+										height="26"
+										viewBox="0 0 34 26"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M2.00098 12.9047L11.9613 22.865L31.8819 2.94434"
+											stroke="#101F42"
+											stroke-width="3.98413"
+											stroke-linecap="round"
+										/>
+									</svg>
+									Over than 10 years working
+								</li>
+								<li class="benefits__item benefits__item_red-marker">
+									<svg
+										width="34"
+										height="26"
+										viewBox="0 0 34 26"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M2.00098 12.9047L11.9613 22.865L31.8819 2.94434"
+											stroke="#101F42"
+											stroke-width="3.98413"
+											stroke-linecap="round"
+										/>
+									</svg>
+									Professionaly professionals
+								</li>
+								<li class="benefits__item benefits__item_red-marker">
+									<svg
+										width="34"
+										height="26"
+										viewBox="0 0 34 26"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M2.00098 12.9047L11.9613 22.865L31.8819 2.94434"
+											stroke="#101F42"
+											stroke-width="3.98413"
+											stroke-linecap="round"
+										/>
+									</svg>
+									Getting better every day
+								</li>
+								<li class="benefits__item benefits__item_red-marker">
+									<svg
+										width="34"
+										height="26"
+										viewBox="0 0 34 26"
+										fill="none"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path
+											d="M2.00098 12.9047L11.9613 22.865L31.8819 2.94434"
+											stroke="#101F42"
+											stroke-width="3.98413"
+											stroke-linecap="round"
+										/>
+									</svg>
+									Step by step growing
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+
+				<section class="translation-rates">
+					<div class="container">
+						<div class="breadcrumbs">
+							<span
+								>Home
+								<svg
+									width="6"
+									height="9"
+									viewBox="0 0 6 9"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M1 1L4.5 4.5L1 8"
+										stroke="black"
+										stroke-linecap="round"
+									/>
+								</svg>
+							</span>
+							<span
+								>Section 2
+								<svg
+									width="6"
+									height="9"
+									viewBox="0 0 6 9"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M1 1L4.5 4.5L1 8"
+										stroke="black"
+										stroke-linecap="round"
+									/></svg
+							></span>
+							<span>Section 3</span>
+						</div>
+						<h2 class="translation-rates__title title title_red">
+							Translation rates
+						</h2>
+						<p class="translation-rates__text">
+							A translation of a marketing or commercial text by one of our
+							translators does exactly what it's supposed to do: win over your
+							readers. We don't just translate a text word for word. Marketing
+							translations require a fair amount of liberties to be taken in
+							order to meet the needs and desires of your target audience
+							abroad. While translating marketing texts, our translators may
+							consult you about any cultural differences that need to be taken
+							into account. As far as content goes, your translation will of
+							course be identical to the source text, unless the briefing states
+							otherwise. We are also experienced in providing SEO translations.
+						</p>
+
+						<table class="translation-rates__table rates__table">
+							<colgroup>
+								<col style="display: 'block'" />
+								<col />
+								<col />
+							</colgroup>
+							<thead class="rates__table-head">
+								<tr>
+									<th>Regular Translitions</th>
+									<th>General Quality Check</th>
+									<th>Complete Quality check</th>
+								</tr>
+							</thead>
+							<tbody class="rates__table-body">
+								<tr>
+									<td>General</td>
+									<td>€ 0,12</td>
+									<td>€ 0,15</td>
+								</tr>
+								<tr>
+									<td>General</td>
+									<td>€ 0,12</td>
+									<td>€ 0,15</td>
+								</tr>
+								<tr>
+									<td>General</td>
+									<td>€ 0,12</td>
+									<td>€ 0,15</td>
+								</tr>
+								<tr>
+									<td>General</td>
+									<td>€ 0,12</td>
+									<td>€ 0,15</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<h3
+							class="translation-rates__title title title_red title_red_small"
+						>
+							A convincing marketing translation
+						</h3>
+						<p class="translation-rates__text">
+							A translation of a marketing or commercial text by one of our
+							translators does exactly what it's supposed to do: win over your
+							readers.
+							<span class="translation-rates__text--red"
+								>We don't just translate</span
+							>
+							a text word for word. Marketing translations require a fair amount
+							of liberties to be taken in order to meet the needs and desires of
+							your target audience abroad. While translating marketing texts,
+							our translators may consult you about any cultural differences
+							that need to be taken into account. As far as content goes, your
+							translation will of course be identical to the source text, unless
+							the briefing states otherwise. We are also experienced in
+							providing SEO translations.
+						</p>
+						<h3 class="translation-rates__title title_red title_red_small">
+							Some marketing translations that we provide on a regular basis
+							include:
+						</h3>
+						<p class="translation-rates__text">
+							Brochures, websites, catalogues, surveys, film material,
+							presentations, marketing plans, newsletters, research papers,
+							training materials, press releases and advertisements.
+						</p>
+					</div>
+				</section>
+
+				@@include('html/our-clients.html')
+			</main>
+			@@include('html/footer.html')
+			<!-- <script src="js/vue/vue-components/calculation.js"></script>
+			<script src="js/vue/vue.js"></script> -->
+		</div>
+	</body>
+</html>
