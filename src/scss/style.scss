@@ -3149,6 +3149,9 @@ main {
 	}
 
 	&__img {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 		position: absolute;
 		left: 0;
 		top: 0;
@@ -3737,6 +3740,12 @@ main {
 
 			@media screen and (max-width: 464px) {
 				width: 100%;
+			}
+
+			&_last {
+				@media screen and (max-width: 776px) {
+					width: 100%;
+				}
 			}
 		}
 
@@ -4357,15 +4366,20 @@ main {
 //++++++ vision ++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
 
 .about-as__vision {
-	background: url("@img/vision-bg.png");
-	background-position: right bottom;
-	background-size: cover;
-	background-repeat: no-repeat;
 }
 .vision {
 	position: relative;
-
+	background-image: url("@img/vision-bg.png");
+	background-position: right bottom;
+	background-repeat: no-repeat;
 	background-color: #101f42;
+
+	@media screen and (max-width: 1300px) {
+		background-position: right -250px bottom;
+	}
+	@media screen and (max-width: 1100px) {
+		background-image: none;
+	}
 
 	&::after {
 		position: absolute;
@@ -4381,7 +4395,7 @@ main {
 		content: "";
 
 		@media screen and (max-width: 991px) {
-			top: 150px;
+			top: 103px;
 			width: 50%;
 		}
 		@media screen and (max-width: 480px) {
@@ -4391,18 +4405,17 @@ main {
 
 	&__inner {
 		position: relative;
-		padding: 103px 0 0 0;
+		padding-top: 103px;
+		padding-bottom: 150px;
 
 		@media screen and (max-width: 1280px) {
-			padding: 103px 0 100px;
+			padding-top: 103px;
+			padding-bottom: 100px;
 		}
 
-		@media screen and (max-width: 991px) {
-			padding: 150px 0 100px;
-		}
-
-		@media screen and (max-width: 460px) {
-			padding: 50px 0;
+		@media screen and (max-width: 480px) {
+			padding-top: 50px;
+			padding-bottom: 50px;
 		}
 	}
 
@@ -4431,46 +4444,50 @@ main {
 		z-index: 2;
 		font-size: 61px;
 		line-height: 92px;
-		@media screen and (max-width: 460px) {
+		@media screen and (max-width: 480px) {
 			text-align: center;
 		}
 	}
 
-	&__img-mask {
-		flex-shrink: 0;
-		float: right;
-		-webkit-mask: url(../img/vision-bg.png);
-		mask-image: url("@img/vision-bg.png");
-		shape-outside: url("@img/vision-bg.png");
-		width: 854px;
-		height: 843px;
-		margin-right: -250px;
-		shape-margin: 20px;
+	&__content {
+		display: flex;
+	}
+	&__content-left {
+		width: 75%;
+		@media screen and (max-width: 1300px) {
+			width: 80%;
+		}
+		@media screen and (max-width: 1100px) {
+			width: 100%;
+		}
+		p:nth-child(2) {
+			max-width: 75%;
 
-		img {
-			height: 100%;
+			@media screen and (max-width: 1100px) {
+				max-width: 100%;
+			}
 		}
 
-		@media screen and (max-width: 1280px) {
+		p:nth-child(3) {
+			max-width: 60%;
+			@media screen and (max-width: 1300px) {
+				max-width: 55%;
+			}
+			@media screen and (max-width: 1100px) {
+				max-width: 100%;
+			}
+		}
+	}
+	&__content-right {
+		width: 25%;
+
+		@media screen and (max-width: 1300px) {
+			width: 20%;
+		}
+		@media screen and (max-width: 1100px) {
 			display: none;
 		}
 	}
-
-	&__wrapper {
-		margin-top: -320px;
-	}
-	&__wrapper::after {
-		content: ".";
-		display: block;
-		height: 0;
-		clear: both;
-		visibility: hidden;
-	}
-
-	&__content {
-		padding-top: 274px;
-	}
-
 	&__text {
 		font-size: 24px;
 		line-height: 36px;
@@ -4713,6 +4730,11 @@ main {
 			gap: 30px;
 		}
 
+		span,
+		a {
+			cursor: pointer;
+		}
+
 		&_like.active {
 			#like1,
 			#like2 {
@@ -4726,6 +4748,7 @@ main {
 
 //+++++++++ share-popup +++++++++++++++++++++++++++++++++++++++++++++++++++++//
 .share-popup {
+	display: none;
 	position: fixed;
 	top: 0;
 	bottom: 0;
