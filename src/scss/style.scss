@@ -4895,3 +4895,114 @@ main {
 	}
 }
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
+
+//++++++++ main++++++++++++++++++++++++++++++++++++++++++++++++++++++//
+
+.main {
+	&__bg {
+		position: absolute;
+		z-index: -1;
+
+		&_references {
+			background-image: url("@img/references-bg.png");
+			background-repeat: no-repeat;
+			background-position: 0 0;
+			height: 2200px;
+			width: 100%;
+		}
+	}
+}
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
+
+//+++++++ descr-block +++++++++++++++++++++++++++++++++++++++++++++++++++++++//
+
+.references__descr-block {
+	padding-top: 150px;
+
+	@media screen and (max-width: 991px) {
+		padding-top: 80px;
+	}
+}
+
+.descr-block {
+	&__inner {
+		max-width: 900px;
+	}
+	&__title {
+		margin-bottom: 25px;
+	}
+
+	&__text {
+		font-weight: 400;
+		line-height: 180%;
+		color: #000000;
+
+		a {
+			text-decoration: underline;
+			color: #f24c4c;
+		}
+	}
+}
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
+
+//+++++++++++ featured-cases +++++++++++++++++++++++++++++++++++++++++++++++++++//
+
+.references__featured-cases {
+	padding-top: 150px;
+
+	@media screen and (max-width: 991px) {
+		padding-top: 80px;
+	}
+}
+.featured-cases {
+	&__title {
+		text-align: center;
+		margin-bottom: 60px;
+	}
+
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		gap: 42px;
+	}
+
+	&__elem {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		flex-basis: 340px;
+		flex-shrink: 1;
+		flex-grow: 1;
+		padding: 30px;
+		background-color: #fff;
+		box-shadow: 0px 4px 19px rgba(0, 0, 0, 0.05);
+		border-radius: 10px;
+	}
+
+	&__img {
+		width: 212px;
+		height: 212px;
+		background-size: contain;
+		margin-bottom: 26px;
+	}
+
+	&__name {
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 30px;
+		margin-bottom: 26px;
+		color: #f24c4c;
+	}
+
+	&__btn {
+		width: 100%;
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 30px;
+		color: #ffffff;
+		padding: 20px 45px;
+	}
+}
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
