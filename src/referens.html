@@ -19,7 +19,10 @@
 				</div>
 			</section>
 
-			<main class="main">
+			<main
+				class="main"
+				id="app"
+			>
 				<div class="main__bg main__bg_references"></div>
 
 				<section class="descr-block references__descr-block">
@@ -70,98 +73,163 @@
 							Featured cases
 						</h2>
 						<ul class="featured-cases__list">
-							<li class="featured-cases__elem">
+							<li
+								v-for="item in featuredCases"
+								class="featured-cases__elem"
+							>
 								<div class="featured-cases__img ibg">
 									<img
-										src="@img/featured-cases-1.png"
+										:src="'@img/' + item.img"
 										alt=""
 										class=""
 									/>
 								</div>
 
-								<h4 class="title featured-cases__name">
-									DEUTSCHE AFRIKA STIFTUNG E.V.
-								</h4>
-								<button class="btn btn_tomato featured-cases__btn">
+								<h4 class="title featured-cases__name">{{item.title}}</h4>
+								<a
+									:href="item.link"
+									class="btn btn_tomato featured-cases__btn"
+								>
 									Show Case
-								</button>
-							</li>
-							<li class="featured-cases__elem">
-								<div class="featured-cases__img ibg">
-									<img
-										src="@img/featured-cases-2.png"
-										alt=""
-										class=""
-									/>
-								</div>
-								<h4 class="title featured-cases__name">
-									DEUTSCHE AFRIKA STIFTUNG E.V.
-								</h4>
-								<button class="btn btn_tomato featured-cases__btn">
-									Show Case
-								</button>
-							</li>
-							<li class="featured-cases__elem">
-								<div class="featured-cases__img ibg">
-									<img
-										src="@img/featured-cases-3.png"
-										alt=""
-										class=""
-									/>
-								</div>
-								<h4 class="title featured-cases__name">
-									DEUTSCHE AFRIKA STIFTUNG E.V.
-								</h4>
-								<button class="btn btn_tomato featured-cases__btn">
-									Show Case
-								</button>
-							</li>
-							<li class="featured-cases__elem">
-								<div class="featured-cases__img ibg">
-									<img
-										src="@img/featured-cases-4.png"
-										alt=""
-										class=""
-									/>
-								</div>
-								<h4 class="title featured-cases__name">
-									DEUTSCHE AFRIKA STIFTUNG E.V.
-								</h4>
-								<button class="btn btn_tomato featured-cases__btn">
-									Show Case
-								</button>
-							</li>
-							<li class="featured-cases__elem">
-								<div class="featured-cases__img ibg">
-									<img
-										src="@img/featured-cases-5.png"
-										alt=""
-										class=""
-									/>
-								</div>
-								<h4 class="title featured-cases__name">
-									DEUTSCHE AFRIKA STIFTUNG E.V.
-								</h4>
-								<button class="btn btn_tomato featured-cases__btn">
-									Show Case
-								</button>
-							</li>
-							<li class="featured-cases__elem">
-								<div class="featured-cases__img ibg">
-									<img
-										src="@img/featured-cases-6.png"
-										alt=""
-										class=""
-									/>
-								</div>
-								<h4 class="title featured-cases__name">
-									DEUTSCHE AFRIKA STIFTUNG E.V.
-								</h4>
-								<button class="btn btn_tomato featured-cases__btn">
-									Show Case
-								</button>
+								</a>
 							</li>
 						</ul>
+					</div>
+				</section>
+
+				<section class="reviews references__reviews">
+					<h2 class="title title_red title_red_big reviews__title">
+						Featured cases
+					</h2>
+					<div class="swiper reviews__slider">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="reviews__slide">
+									<p class="reviews__img">
+										<img
+											src="@img/reviewer.jpg"
+											alt="Feedback Writer"
+										/>
+									</p>
+
+									<p class="reviews__awesom">Awesome Client</p>
+									<p class="reviews__text">
+										This company is the best i’ve ever cooperate with! This
+										company is the best i’ve ever cooperate with! This company
+										is the best i’ve ever cooperate with! This company is the
+										best i’ve ever cooperate with!
+									</p>
+									<p class="reviews__name">Richard</p>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="reviews__slide">
+									<p class="reviews__img">
+										<img
+											src="@img/reviewer.jpg"
+											alt="Feedback Writer"
+										/>
+									</p>
+
+									<p class="reviews__awesom">Awesome Client</p>
+									<p class="reviews__text">
+										This company is the best i’ve ever cooperate with! This
+										company is the best i’ve ever cooperate with! This company
+										is the best i’ve ever cooperate with! This company is the
+										best i’ve ever cooperate with!
+									</p>
+									<p class="reviews__name">Richard</p>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="reviews__slide">
+									<p class="reviews__img">
+										<img
+											src="@img/reviewer.jpg"
+											alt="Feedback Writer"
+										/>
+									</p>
+
+									<p class="reviews__awesom">Awesome Client</p>
+									<p class="reviews__text">
+										This company is the best i’ve ever cooperate with! This
+										company is the best i’ve ever cooperate with! This company
+										is the best i’ve ever cooperate with! This company is the
+										best i’ve ever cooperate with!
+									</p>
+									<p class="reviews__name">Richard</p>
+								</div>
+							</div>
+						</div>
+						<div class="reviews-pagination"></div>
+					</div>
+				</section>
+
+				<section
+					class="marketing-translation references__marketing-translation"
+				>
+					<div class="container container_small">
+						<div class="marketing-translation__top">
+							<h2
+								class="title title_red title_red_big marketing-translation__title"
+							>
+								A convincing marketing translation
+							</h2>
+							<p class="marketing-translation__descr">
+								By specializing in various areas of expertise and languages, we
+								can take care of virtually every kind of translation, including
+								medical information, complex legal texts, technical reports and
+								marketing texts. Below you will find an overview of our
+								references, sorted by industry.
+							</p>
+							<ul class="filter">
+								<li class="filter__item">
+									<button
+										class="filter__btn"
+										:class='{"filter__btn_active":marketingTranslationFilterAll}'
+										@click="setmarketingTranslationFilterAll()"
+									>
+										All
+									</button>
+								</li>
+								<li class="filter__item">Or</li>
+
+								<li
+									v-for="(item,index) in marketingTranslationFilter"
+									class="filter__item"
+								>
+									<button
+										class="filter__btn"
+										:class='{"filter__btn_active":item.active}'
+										@click="setmarketingTranslationFilter(index)"
+									>
+										{{item.title}}
+									</button>
+								</li>
+							</ul>
+						</div>
+						<div class="marketing-translation__bottom">
+							<ul class="marketing-translation__list">
+								<li
+									v-for="item in marketingTranslation"
+									class="marketing-translation__item"
+								>
+									<a
+										class="marketing-translation__link"
+										:href="item.link"
+									>
+										<img
+											:src="'@img/' + item.img"
+											alt=""
+										/>
+									</a>
+								</li>
+							</ul>
+						</div>
+
+						<button class="btn btn_tomato discover-blog__btn">
+							Show me more!
+						</button>
 					</div>
 				</section>
 
