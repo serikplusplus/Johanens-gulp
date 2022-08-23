@@ -26,10 +26,12 @@ export default function timeline() {
 
 	circleThirs.addEventListener('mouseover', () => {
 		textThirs.classList.add('hover')
+		lineFirst.classList.add('hover')
 		lineSecond.classList.add('hover')
 	})
 	circleThirs.addEventListener('mouseout', () => {
 		textThirs.classList.remove('hover')
+		lineFirst.classList.remove('hover')
 		lineSecond.classList.remove('hover')
 	})
 }

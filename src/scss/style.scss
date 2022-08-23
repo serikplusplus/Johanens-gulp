@@ -137,6 +137,18 @@ main {
 		}
 	}
 
+	&_black {
+		color: #fff;
+		background: #212121;
+		border: 1px solid transparent;
+
+		&:hover {
+			background: #fff;
+			color: #212121;
+			border: 1px solid transparent;
+		}
+	}
+
 	&_tomato {
 		color: #fff;
 		background: #f24c4c;
@@ -746,8 +758,12 @@ main {
 			}
 		}
 		.main-section__right {
+			width: 60%;
 			padding-top: calc(40px + (200 - 100) * ((100vw - 991px) / (1920 - 991)));
 			padding-left: calc(10px + (145 - 70) * ((100vw - 991px) / (1920 - 991)));
+			@media screen and (max-width: 1300px) {
+				width: 70%;
+			}
 			@media screen and (max-width: 991px) {
 				display: block;
 				padding-top: 0;
@@ -2826,11 +2842,9 @@ main {
 
 //+++++++++ GET QUOTE +++++++++++++++++++++++++++++++++++++++++++++++++++++//
 
-.lang__get-quote {
+.lang__get-quote,
+.general__get-quote {
 	padding-top: 150px;
-	max-width: 1280px;
-	margin: 0 auto;
-
 	@media screen and (max-width: 991px) {
 		padding-top: 70px;
 	}
@@ -3590,16 +3604,10 @@ main {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-around;
-		// gap: 40px;
 		margin-bottom: 50px;
-
-		// @media screen and (max-width: 991px) {
-		// 	gap: 40px;
-		// }
 	}
 
 	&__elem {
-		// flex-basis: 400px;
 		padding: 0 20px;
 		margin-bottom: 40px;
 		flex: 0 0 calc(33.33% - 30px);
@@ -4590,12 +4598,15 @@ main {
 		gap: 10px;
 	}
 
+	&__left {
+		width: 31%;
+		min-width: 390px;
+	}
 	&__news {
 		display: flex;
 		flex-direction: column;
 		gap: 17px;
-		width: 31%;
-		min-width: 390px;
+
 		color: #000000;
 		@media screen and (max-width: 1200px) {
 			display: none;
@@ -4608,11 +4619,16 @@ main {
 		font-size: 24px;
 		line-height: 125.5%;
 		color: #000000;
-		margin-bottom: 17px;
 	}
 
 	&__news-item {
 		background-color: #fff;
+
+		&:hover .blog__news-learn {
+			svg {
+				margin-left: 45px;
+			}
+		}
 	}
 
 	&__news-link {
@@ -4645,6 +4661,7 @@ main {
 		align-items: center;
 		svg {
 			margin-left: 20px;
+			transition: margin-left 0.3s linear;
 		}
 	}
 
@@ -4745,10 +4762,27 @@ main {
 		a {
 			cursor: pointer;
 		}
-
+		&_like:hover {
+			#like1,
+			#like2 {
+				fill: #d9d9d9;
+			}
+		}
+		&_comment:hover {
+			#comment1,
+			#comment2 {
+				fill: #d9d9d9;
+			}
+		}
 		&_like.active {
 			#like1,
 			#like2 {
+				fill: #f24c4c;
+			}
+		}
+		&_comment.active {
+			#comment1,
+			#comment2 {
 				fill: #f24c4c;
 			}
 		}
@@ -4919,6 +4953,14 @@ main {
 			background-repeat: no-repeat;
 			background-position: 0 0;
 			background-size: 100% 100%;
+			height: 2200px;
+			width: 100%;
+		}
+		&_blog {
+			background-image: url("@img/blog-main-bg.png");
+			background-repeat: no-repeat;
+			background-position: center top;
+			background-size: cover;
 			height: 2200px;
 			width: 100%;
 		}
@@ -5120,4 +5162,98 @@ main {
 	}
 }
 
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
+
+//++++++ general-info ++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
+
+.general-info {
+	padding-top: 150px;
+
+	@media screen and (max-width: 991px) {
+		padding-top: 80px;
+	}
+	&__wrapper {
+		display: flex;
+		gap: 40px;
+
+		@media screen and (max-width: 776px) {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+	&__left {
+		flex-grow: 1;
+		min-width: 380px;
+		position: -webkit-sticky;
+		position: sticky;
+		top: 120px;
+		align-self: flex-start;
+
+		@media screen and (max-width: 991px) {
+			min-width: 320px;
+		}
+
+		@media screen and (max-width: 776px) {
+			position: relative;
+			align-self: auto;
+			top: 0;
+		}
+
+		.full-person {
+			@media screen and (max-width: 991px) {
+				max-width: 320px;
+			}
+		}
+	}
+	&__right {
+		max-width: 1140px;
+		h2 {
+			margin: 0;
+			margin-bottom: 25px;
+			font-weight: 700;
+			font-size: 33px;
+			line-height: 50px;
+			color: #f24c4c;
+
+			@media screen and (max-width: 991px) {
+				font-size: 25px;
+				line-height: 38px;
+			}
+			@media screen and (max-width: 480px) {
+				font-size: 17px;
+				line-height: 30px;
+			}
+		}
+		h3 {
+			margin: 0;
+			margin-bottom: 25px;
+			font-weight: 500;
+			font-size: 24px;
+			line-height: 36px;
+			color: #f24c4c;
+
+			@media screen and (max-width: 776px) {
+				font-size: 18px;
+				line-height: 24px;
+			}
+		}
+		p {
+			line-height: 180%;
+			color: #000000;
+
+			&:not(:last-child) {
+				margin-bottom: 98px;
+
+				@media screen and (max-width: 991px) {
+					margin-bottom: 58px;
+				}
+			}
+
+			a {
+				text-decoration: underline;
+				color: #f24c4c;
+			}
+		}
+	}
+}
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++//
